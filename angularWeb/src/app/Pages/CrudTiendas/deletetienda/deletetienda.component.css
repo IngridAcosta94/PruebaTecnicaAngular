@@ -1,0 +1,11 @@
+.mat-form-field {
+    display: block !important;
+    position: relative;
+    text-align: left;
+  }
+  
+  .titulo{
+    color: white;
+    background-color: #254d71;border-top-width: 0px;margin-top: -24;text-align: center;margin-right: -24;padding: 10;margin-left: -24;height: 60px;
+  }
+  

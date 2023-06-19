@@ -1,0 +1,128 @@
+.divhijo {
+    background-image: url("/assets/images/background.png");
+    background-color: white;
+    background-repeat: repeat;
+    background-size: contain;
+  }
+  
+  .maintext {
+    margin-bottom: 2px;
+  }
+  
+  h1 {
+    margin-top: 3rem;
+    text-align: center;
+    color: #203864;
+  }
+  
+  #Buscador {
+  
+    background-size: 20px;
+    width: 400px;
+    border: transparent;
+    border-bottom: solid 1px #ccc;
+    padding: 10px 10px 10px 30px;
+
+  }
+
+  .button-ad {
+    margin-top: 1px;
+    margin-right: 125px;
+  
+  
+  }
+  
+  .btn-agregar {
+    background-color: #254d71;
+    color: white;
+    width: 90px;
+  
+  }
+  
+  .buton-search {
+    margin-right: 30%;
+  
+  }
+  
+  .accionButton{
+    width: 130px;
+  }
+  
+  
+  .button-save {
+ 
+    background-color: #254d71;
+    color: #fff;
+    border-color: #254d71;
+    border-radius: 5px;
+    border: none;
+    vertical-align: text-top !important;
+    margin-left: 7px !important;
+    font-size: small;
+    width: 90px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    transition-duration: 0.4s;
+  }
+  
+  .button-save :hover {
+    background-color: #254d71;
+  }
+  
+
+  thead {
+    background-color: #254d71;
+    color: white;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  .mycheck {
+    align-items: center;
+    background-color: #cccccc;
+    border-color: solid 2px #7f8184;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    display: inline-flex;
+    top: 50%;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  button {
+    margin: 0 7px;
+  }
+  
+
+  .pag-button {
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+  
+  .has-text-centered {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  
+  .homestyle {
+    justify-content: flex-start;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 70px;
+    background-color: transparent;
+    border: 0;
+  }
+  

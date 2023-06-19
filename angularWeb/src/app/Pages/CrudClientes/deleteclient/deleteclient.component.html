@@ -1,0 +1,9 @@
+<h2 mat-dialog-title class="titulo" style="text-align: center;" >ELIMINAR CLIENTE</h2>
+
+<div mat-dialog-content style="text-align: center;">
+ <h2>¿Está seguro que desea eliminar este cliente?</h2>
+    <div class="mat-dialog-actions" style="text-align: center;" >
+      <button  type="button" mat-dialog-close class="btn btn-secondary" style="margin-bottom: 15px; color: white;">Cancelar</button>
+      <button type="submit" [mat-dialog-close]="idClient" cdkFocusInitial class="btn btn-danger" style="margin-left: 20px; margin-bottom: 15px; color: white;">Eliminar</button>
+    </div>
+</div>

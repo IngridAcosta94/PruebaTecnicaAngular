@@ -1,0 +1,79 @@
+
+
+<div class="row">
+    <div class="col-12" style="display: flex; justify-content: center;">
+    <h2>Asignar Articulos</h2>
+    </div>
+</div>
+
+
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+ 
+  <div style="margin-top: 20px;" class="container">
+
+
+    <br>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-9 row mb-3 hovertext" [formGroup]="formsearch">
+        <mat-form-field data-hover="Ingrese monto" style="font-size: 20px;">
+          <mat-label><mat-icon>search</mat-icon>Proporcione un nombre por
+            favor...</mat-label>
+          <input matInput type="text" formControlName="name"
+            (keyup.enter)="findSucursal($event)"
+            (keydown.backspace)="findSucursal($event)">
+        </mat-form-field>
+      </div>
+      <div class="col-2">
+        <a class="btn btn-primary buttonsearch" (click)="findSucursal($event)">Buscar</a>
+      </div>
+    </div>
+    <br>
+
+    
+    <div class="row">
+       
+      <div class="col-3"*ngFor="let item of sucursales">
+        <mat-card class="cardstyle">
+          <mat-card-content>
+            <div class="row">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-4"></div>
+                  <div class="col-4"></div>
+                  <div class="col-2 ajusta"></div>
+                  <div class="col-2 ajusta"></div>
+                </div>
+                <h4 style="text-align: center; padding-top: 10px;">Sucursal:: {{item.sucursal}}</h4>
+                <h4 style="text-align: center; padding-top: 10px;">Dirección:{{item.direccion}}</h4>
+              </div>
+          
+            </div>
+
+            <div class="row">
+              <div class="col-12" style="display:flex; justify-content: center;">
+              <a class="btn btn-primary buttonsearch" (click)="openDialogArticulos(item.id)"  >Ver Articulos</a>
+              </div>
+          </div>
+            <div class="row">
+                <div class="col-12" style="display:flex; justify-content: center;">
+                <a class="btn btn-primary buttonsearch" [routerLink]="['/selectarticulo', item.id]" routerLinkActive="router-link-active" >Agregar Articulos</a>
+                </div>
+            </div>
+          
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div class="has-text-centered">
+        <!-- <div class="spinner"></div> -->
+        <!-- <pagination-controls (pageChange)="pageActual = $event"
+          previousLabel="Anterior"
+          nextLabel="Siguiente"></pagination-controls> -->
+      </div>
+    </div>
+  </div>
+</body>
+

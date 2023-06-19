@@ -1,0 +1,144 @@
+body{
+    background-image: url("/assets/images/background.png");
+    background-color: white;
+    background-repeat: repeat;
+    background-size: contain;
+  }
+  
+  .buttonhome{
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    white-space: nowrap;
+
+  }
+  .title{
+    text-align: center;
+    font-size: 24px;
+  }
+  .buttonsearch{
+    margin: 10px 5px 5px 0px;
+    border-radius: 10px;
+  }
+  .redondeadonorelieve {
+    border-radius: 5px;
+    border: 0;
+  }
+  .buttonadd{
+    text-align: end;
+  }
+  h4{
+    margin: 0;
+  }
+  h2{
+    margin: 0;
+  }
+  .buttonalign{
+    position: absolute;
+    bottom: 5px;
+    right: 5%;
+    font-size: 30px;
+  }
+  .btnoptions{
+    color: blue;
+    border-radius: 10px;
+    text-decoration-line: underline;
+  }
+  .btnadd{
+    background-color: #254d71;
+    color: white;
+    border: 1px solid #254d71;
+    border-radius: 10px;
+    margin-left: 8px;
+    margin-bottom: 8px;
+  }
+  .btnfilter{
+    background-color: #d2d5d7;
+    color: black;
+    border: 1px solid #d2d5d7;
+    border-radius: 10px;
+    margin-left: 8px;
+    margin-bottom: 8px;
+  }
+  .btnadd:hover {
+    background-color: #2164a0;
+    color: white;
+  }
+  .btnfilter:hover {
+    background-color: #21a052;
+    color: white;
+  }
+  .btnsize{
+    font-size: 20px;
+  }
+  @media screen and (max-width: 990px) {
+    .buttonalign{
+      bottom: 5px;
+      right: 0%;
+    }
+    .btnsize{
+      font-size: 18px;
+    }
+  }
+  button{
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    white-space: nowrap;
+    margin-bottom: 40px;
+  }
+  
+  .rankstyle{
+    text-align: center;
+    color: gold;
+    margin: 0;
+  }
+  .cardstyle{
+    margin-bottom: 15px;
+    border:solid 1px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.164);
+  }
+  
+  .homestyle {
+    justify-content: flex-start;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: transparent;
+    border: 0;
+  }
+  
+  .imgstyle1{
+    width: 75px;
+    height: 90px;
+    border-radius: 45px;
+  }
+  .imgstyle3{
+    width: 75px;
+    height: 90px;
+    border-radius: 45px;
+  }
+  .imgstyle5{
+    width: 75px;
+    height: 90px;
+    border-radius: 45px;
+  }
+  .has-text-centered{
+    display: flex;
+    justify-content: center;
+  }
+  .icon-save{
+    margin-right: 1px !important;
+    vertical-align: text-bottom;
+    }
+  
+  .ajusta{
+    display: flex;
+    justify-content: center;
+  }
+  
+  

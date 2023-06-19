@@ -1,0 +1,94 @@
+
+
+
+<div class="row">
+
+    <div class="col-12" style="display: flex; justify-content: center;">
+    
+        <h2>NUEVO USUARIO</h2>
+    
+    </div>
+
+</div>
+
+<form  [formGroup]="formUsuario">
+    <div class="row">
+
+        <div class="col-12" style="display: flex; justify-content: center;">
+        
+            <h2>Datos del usuario</h2>
+        
+        </div>
+    
+    </div>
+    
+    <div class="row">
+        <div class="col-4">
+    
+            <mat-form-field>
+                <mat-label>Nombre usuario</mat-label>
+                <input formControlName="Nombre" matInput>
+              </mat-form-field>
+    
+        </div>
+        <div class="col-4">
+            <mat-form-field>
+                <mat-label>Correo</mat-label>
+                <input hidden value="0" formControlName="IdCliente" matInput>
+                <input formControlName="Correo" matInput>
+            </mat-form-field>
+        </div>
+        <div class="col-4">
+            <mat-form-field>
+                <mat-label>Contraseña</mat-label>
+                <input formControlName="Contrasenia" matInput>
+            </mat-form-field>
+        </div>
+    
+    </div>
+    
+</form>
+<form  [formGroup]="formCliente">
+    <div class="row">
+
+        <div class="col-12" style="display: flex; justify-content: center;">
+        
+            <h2>Datos del cliente</h2>
+        
+        </div>
+    
+    </div>
+    
+    <div class="row">
+        <div class="col-4">
+    
+            <mat-form-field>
+                <mat-label>Nombre</mat-label>
+                <input formControlName="Nombre" matInput>
+              </mat-form-field>
+    
+        </div>
+        <div class="col-4">
+            <mat-form-field>
+                <mat-label>Apellidos</mat-label>
+                <input formControlName="Apellidos" matInput>
+            </mat-form-field>
+        </div>
+        <div class="col-4">
+            <mat-form-field>
+                <mat-label>Dirección</mat-label>
+
+                <input formControlName="Direccion" matInput>
+            </mat-form-field>
+        </div>
+    
+    </div>
+    <div class="row">
+        <div class="col-6">
+            
+        </div>
+        <div class="col-6" style="display: flex; justify-content: center;">
+            <button (click)="registrar()">Guardar</button>
+        </div>
+    </div>
+</form>

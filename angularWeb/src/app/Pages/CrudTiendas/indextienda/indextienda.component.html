@@ -1,0 +1,78 @@
+
+<body>
+
+
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <h1>Catálogo Tiendas</h1>
+        </div>
+        <div class="col-4"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <input class="search" (input)="findTienda($event)" matInput type="search"
+                placeholder="Buscar tiendas...." id="Buscador" />
+        </div>
+        <div class="col-4"></div>
+    </div>
+
+    <div class="button-ad">
+        <div class="d-flex flex-row-reverse">
+            <button style="color: white;" mat-button class="button-save" (click)="openDialogCreate()" type="submit">
+                Nuevo
+            </button>
+        </div>
+    </div>
+
+    <br />
+
+    <div class="container">
+        <div class="tableMain">
+            <table style="background-color: white" class="table table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>SUCURSAL</th>
+                        <th>DIRECCIÓN</th>
+                        <th>ACCIONES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of tiendas">
+
+                        <td>{{ item.id }}</td>
+                        <td>
+                            {{
+                            item.sucursal
+                            }}
+                        </td>
+                        <td>{{ item.direccion }}</td>
+                        <td class="accionButton">
+                            <a (click)="openDialogEdit(item.id)" class="btn btn-outline-primary">
+                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                            </a>
+                            <a (click)="openDialogDetail(item.id)" class="btn btn-outline-primary">
+                                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                             </a>
+                             <a (click)="openDialogDeleted(item.id)" class="btn btn-outline-danger">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                             </a>
+                            <!-- <button class="btn btn-outline-danger" (click)="openDialogDeleted(item.id)">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                            </button> -->
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- <div class="has-text-centered m-3">
+          <pagination-controls (pageChange)="pageActual = $event" previousLabel="Anterior" nextLabel="Siguiente">
+          </pagination-controls>
+        </div> -->
+        </div>
+    </div>
+
+    
+</body>

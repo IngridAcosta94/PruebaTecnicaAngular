@@ -1,0 +1,21 @@
+<mat-nav-list>
+  <a (click)="menuValidations()" class="sidenav-item" mat-list-item>
+    <mat-icon svgIcon="home" class="sidenav-link-icon"></mat-icon>
+    <span class="title">Inicio</span>
+  </a>
+
+  <a class="sidenav-item" mat-list-item>
+    <mat-icon svgIcon="person" class="sidenav-link-icon"></mat-icon>
+    <span>Mi perfil</span>
+  </a>
+
+  <a class="sidenav-item" mat-list-item>
+    <mat-icon svgIcon="settings" class="sidenav-link-icon"></mat-icon>
+    <span>Configuración</span>
+  </a>
+
+  <a class="sidenav-item" mat-list-item (click)="logout()">
+    <mat-icon svgIcon="logout" class="sidenav-link-icon"></mat-icon>
+    <span>Cerrar sesión</span>
+  </a>
+</mat-nav-list>

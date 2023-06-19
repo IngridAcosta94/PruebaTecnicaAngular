@@ -1,0 +1,75 @@
+
+
+
+
+
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <div class="row titulo" style=" margin-bottom: 15px;">
+    <div class="col-3">
+
+    </div>
+    <div class="col-6">
+        <h2 class="title" style="color: white">Articulos de: {{tienda.sucursal}}</h2>
+    </div>
+    <div class="col-3" style="display: flex; justify-content: center;">
+        <button style="margin-top: 5px; color: white; font-size: 26;" mat-icon-button aria-label="close dialog" mat-dialog-close>
+            <mat-icon>close</mat-icon>
+        </button>
+    </div>
+</div>
+
+<body>
+
+
+ 
+  <div style="margin-top: 20px;" class="container">
+
+
+   
+    <br>
+    <!-- <div class="row">
+      <div class="col-1"></div>
+      <div class="col-9 row mb-3 hovertext" [formGroup]="formsearch">
+        <mat-form-field data-hover="Ingrese monto" style="font-size: 20px;">
+          <mat-label><mat-icon>search</mat-icon>Proporcione un código por
+            favor...</mat-label>
+          <input matInput type="text" formControlName="name"
+            (keyup.enter)="findArticulo($event)"
+            (keydown.backspace)="findArticulo($event)">
+        </mat-form-field>
+      </div>
+      <div class="col-2">
+        <a class="btn btn-primary buttonsearch" (click)="findArticulo($event)">Buscar</a>
+      </div>
+    </div> -->
+    <br>
+
+
+    <div class="row">
+      <div class="col-3"
+        *ngFor="let item of articulos">
+        <mat-card class="cardstyle" id="cardSelected">
+        <mat-card-content class="card-customer">
+          <div class="row" style="padding-top: 16px;">
+            <div class="col-1">
+              
+            </div>
+            <div class="col-9">
+              <label><b>Codigo: </b> {{item.codigoArticulo}}</label><br>
+              <label><b>Descripción: </b>{{item.nombreArticulo}}</label><br>
+            </div>
+            <div class="col-1">
+              
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+      </div>
+      <div class="has-text-centered">
+        
+      </div>
+    </div>
+  </div>
+</body>

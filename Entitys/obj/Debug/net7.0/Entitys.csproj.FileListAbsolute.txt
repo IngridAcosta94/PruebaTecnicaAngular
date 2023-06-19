@@ -1,0 +1,12 @@
+C:\Users\ingri\source\repos\angularWeb\Entitys\bin\Debug\net7.0\Entitys.deps.json
+C:\Users\ingri\source\repos\angularWeb\Entitys\bin\Debug\net7.0\Entitys.dll
+C:\Users\ingri\source\repos\angularWeb\Entitys\bin\Debug\net7.0\Entitys.pdb
+C:\Users\ingri\source\repos\angularWeb\Entitys\obj\Debug\net7.0\Entitys.csproj.AssemblyReference.cache
+C:\Users\ingri\source\repos\angularWeb\Entitys\obj\Debug\net7.0\Entitys.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ingri\source\repos\angularWeb\Entitys\obj\Debug\net7.0\Entitys.AssemblyInfoInputs.cache
+C:\Users\ingri\source\repos\angularWeb\Entitys\obj\Debug\net7.0\Entitys.AssemblyInfo.cs
+C:\Users\ingri\source\repos\angularWeb\Entitys\obj\Debug\net7.0\Entitys.csproj.CoreCompileInputs.cache
+C:\Users\ingri\source\repos\angularWeb\Entitys\obj\Debug\net7.0\Entitys.dll
+C:\Users\ingri\source\repos\angularWeb\Entitys\obj\Debug\net7.0\refint\Entitys.dll
+C:\Users\ingri\source\repos\angularWeb\Entitys\obj\Debug\net7.0\Entitys.pdb
+C:\Users\ingri\source\repos\angularWeb\Entitys\obj\Debug\net7.0\ref\Entitys.dll

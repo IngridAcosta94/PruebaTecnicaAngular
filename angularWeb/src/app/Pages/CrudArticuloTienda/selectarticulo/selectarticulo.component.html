@@ -1,0 +1,87 @@
+
+
+
+
+
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+  <div class="row">
+    <div class="col-12" style="display: flex; justify-content: center;">
+    
+    </div>
+  </div>
+ 
+  <div style="margin-top: 20px;" class="container">
+
+
+    <div class="row">
+      <div class="col-12" style="display: flex; justify-content: center;">
+        <h2>Agregar articulos a tienda: Sucursal: {{tienda.sucursal}}</h2>
+      </div>
+    </div>
+
+    <br>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-9 row mb-3 hovertext" [formGroup]="formsearch">
+        <mat-form-field data-hover="Ingrese monto" style="font-size: 20px;">
+          <mat-label><mat-icon>search</mat-icon>Proporcione un código por
+            favor...</mat-label>
+          <input matInput type="text" formControlName="name"
+            (keyup.enter)="findArticulo($event)"
+            (keydown.backspace)="findArticulo($event)">
+        </mat-form-field>
+      </div>
+      <div class="col-2">
+        <a class="btn btn-primary buttonsearch" (click)="findArticulo($event)">Buscar</a>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-12" style="display: flex; justify-content: start;">
+       <a class="btn btn-primary buttonsearch" (click)="Save()">Asignar</a>
+      </div>
+      <div class="col-12" style="display: flex; justify-content: start; margin-bottom: 20px;">
+        <label>Seleccione el o los articulos que asignará a la sucursal</label>
+       </div>
+    </div>
+
+    <div class="row">
+      <div class="col-3"
+        *ngFor="let item of articulos">
+        <mat-card class="cardstyle" (click)="onSelectCard(item)"
+        [ngClass]="{'card-selected mat-elevation-z4': item.selected == true}" id="cardSelected">
+        <span class="selection">
+          <mat-icon>check_circle</mat-icon>
+        </span>
+        <mat-card-content class="card-customer">
+          <div class="row" style="padding-top: 16px;">
+            <div class="col-1">
+              
+            </div>
+            <div class="col-9">
+              <label><b>Codigo: </b> {{item.id}}</label><br>
+              <label><b>Descripción: </b>{{item.descripcion}}</label><br>
+              <label><b>Precio: </b>{{item.precio}}</label><br>
+              <label><b>Stock: </b>{{item.stock}}</label><br>
+            </div>
+            <div class="col-1">
+              
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+      </div>
+      <div class="has-text-centered">
+        <!-- <div class="spinner"></div> -->
+        <!-- <pagination-controls (pageChange)="pageActual = $event"
+          previousLabel="Anterior"
+          nextLabel="Siguiente"></pagination-controls> -->
+      </div>
+    </div>
+  </div>
+</body>
